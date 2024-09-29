@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/iconpage.png" type="image/x-icon">
+    <title>Clínica Veterinaria</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            font-style: normal;
+        }
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+            align-items: center;
+            width: 100%;
+        }
+        nav .nav__logo h2 {
+            color: white;
+            margin: 0;
+        }
+/* botaes de nevegacion*/
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 15px;
+            
+        }
+        nav a:hover {
+            background-color: #2e8b57;
+            color: #fff;
+        }
+/* botao conocemos y cart*/
+
+        .cta {
+            background-color: #2e8b57;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .cta:hover {
+            background-color: #1f6f43;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #2e8b57;
+            text-align: center;
+        }
+        .product {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .product img {
+            max-width: 150px;
+            border-radius: 15px;
+
+        }
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+        .hero__container {
+            background-color: #f0f8f0;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .hero__title {
+            font-size: 2.5em;
+            color: #2e8b57;
+        }
+        .hero__paragraph {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .login-invite {
+            margin-top: 40px;
+            font-size: 1.1em;
+            color: #333;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        form input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        form button {
+            padding: 10px;
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #1f6f43;
+        }
+        #userList {
+            list-style: none;
+            padding: 0;
+        }
+/* para el mensaje de login iniciado*/
+        #userList li {
+            background-color: #e7ffe7;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clínica Veterinaria</h1>
+    </header>
+    <nav class="nav container">
+        <div class="nav__logo"> 
+            <h2 class="nav__title">Clínica Veterinaria</h2>
+        </div>
+        <ul class="nav__link nav__link--menu">
+            <li class="nav__items"><a href="index3.html" class="nav__links">Home</a></li>
+            <li class="nav__items"><a href="index.html" class="nav__links">Sesión</a></li>
+            <li class="nav__items"><a href="servicios.html"
+            class="nav__links">Adopción</a></li>
+            <li class="nav__items"><a href="contacto.html" class="nav__links">Pet-Shop</a></li>
+            <li class="nav__items"><a href="index2.html" class="nav__links">Consultas</a></li>
+            <li class="nav__items"><a href="cart.html" class="nav__links">Cart</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero__container container">
+        <h1 class="hero__title">Volvese Cliente</h1>
+        <p class="hero__paragraph"><link rel="import" href="iframe width="560 height="315" src="https://www.youtube.com/embed/1GWo2rQ7wvc?si=V7by-B6VKbm-QzN5" title="Clinica Veterinária" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </p>
+        <a href="index.html" class="cta">Volverse Cliente</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Clínica Veterinaria. Todos los derechos reservados.</p>
+        <ul class="nav__link nav__link--menu">
+            <li class="nav__items"><a href="https://www.youtube.com/?app=desktop&hl=es" class="nav__links" target="_blank"><img src="./imagenes/youtube.svg" alt="youtube"></a></li>
+            <li class="nav__items"><a href="https://www.instagram.com/" class="nav__links" target="_blank"><img src="./imagenes/instagram.svg" alt="instagram"></a></li>
+            <li class="nav__items"><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA" class="nav__links" target="_blank"><img src="./imagenes/facebook.svg" alt="facebook"></a></li>
+        </ul>
+    </footer>
+
+    <script> </script>
+</body>
+</html>

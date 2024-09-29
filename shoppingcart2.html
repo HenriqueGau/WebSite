@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/iconpage.png" type="image/x-icon">
+    <title>Clínica Veterinaria</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            font-style: normal;
+        }
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+            align-items: center;
+            width: 100%;
+        }
+/*        nav .nav__logo h2 {
+            color: white;
+            margin: 0;
+        }*/
+/* botaes de nevegacion*/
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 15px;
+            
+        }
+        nav a:hover {
+            background-color: #2e8b57;
+            color: #fff;
+        }
+/* botao conocemos y cart*/
+
+        .cta {
+            background-color: #2e8b57;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .cta:hover {
+            background-color: #1f6f43;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #2e8b57;
+            text-align: center;
+        }
+        ul li {
+            list-style-type: none;
+        }
+        .product {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .product img {
+            max-width: 150px;
+            border-radius: 15px;
+
+        }
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+        .hero__container {
+            background-color: #f0f8f0;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .hero__title {
+            font-size: 2.5em;
+            color: #2e8b57;
+        }
+        .hero__paragraph {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .login-invite {
+            margin-top: 40px;
+            font-size: 1.1em;
+            color: #333;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        form input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        form button {
+            padding: 10px;
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #1f6f43;
+        }
+        #userList {
+            list-style: none;
+            padding: 0;
+        }
+/* para el mensaje de login iniciado*/
+        #userList li {
+            background-color: #e7ffe7;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <nav class="nav container">
+        <div class="nav__logo"> 
+            <h2 class="nav__title">Clínica Veterinaria</h2>
+        </div>
+        <ul class="nav__link nav__link--menu">
+            <li class="nav__items"><a href="index1.html" class="nav__links">Home</a></li>
+            <li class="nav__items"><a href="index.html" class="cta">Sesión</a></li>
+            <li class="nav__items"><a href="index3.html"
+            class="nav__links">Adopción</a></li>
+            <li class="nav__items"><a href="petshop.html" class="nav__links">Pet-Shop</a></li>
+            <li class="nav__items"><a href="index2.html" class="nav__links">Consultas</a></li>
+            <li class="nav__items"><a href="cart.html" class="nav__links">Cart</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero__container container">
+        <h1 class="hero__title">Clinica Veterinaria</h1>
+        <p class="hero__paragraph">La Clínica Veterinaria de más alta calidad del país</p>
+        <a href="conocermas.html" class="cta">Conócenos</a>
+    </section>
+
+    <div class="container">
+        <h1>Sección de Usuarios</h1>
+        <form id="userForm">
+            <input type="text" id="username" placeholder="Usuario" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+
+        <h2></h2>
+        <ul id="userList"></ul>
+
+        <h2>Productos Propios de la Veterinaria</h2>
+        <div class="product">
+            <img src="./imagenes/medicalanddog.png" alt="Producto 1">
+            <p>Producto 1</p>
+        </div>
+        <div class="product">
+            <img src="./imagenes/medicalanddog.png" alt="Producto 2">
+            <p>Producto 2</p>
+        </div>
+
+        <p class="login-invite">La Clinica Veterinaria mejor calificadada.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Clínica Veterinaria. Todos los derechos reservados.</p>
+        <ul class="nav__link nav__link--menu">
+            <li class="nav__items"><a href="https://www.youtube.com/?app=desktop&hl=es" class="nav__links" target="_blank"><img src="./imagenes/youtube.svg" alt="youtube"></a></li>
+            <li class="nav__items"><a href="https://www.instagram.com/" class="nav__links" target="_blank"><img src="./imagenes/instagram.svg" alt="instagram"></a></li>
+            <li class="nav__items"><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA" class="nav__links" target="_blank"><img src="./imagenes/facebook.svg" alt="facebook"></a></li>
+        </ul>
+    </footer>
+
+    <script>
+        // Manejador del formulario
+        document.getElementById('userForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            
+            // Agregar el usuario a la lista
+            const userList = document.getElementById('userList');
+            const newUser = document.createElement('li');
+            newUser.textContent = `Usuario: ${username} | Email: ${email}`;
+            userList.appendChild(newUser);
+            
+            // Limpiar el formulario
+            document.getElementById('userForm').reset();
+        });
+    </script>
+</body>
+</html>
